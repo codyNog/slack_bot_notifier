@@ -13,12 +13,12 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.16.1",
+    "axios": "^0.19.0",
     "body-parser": "^1.17.1",
     "dotenv": "^4.0.0",
     "express": "^4.15.2",
-    "tsscmp": "^1.0.6",
-    "pg-promise": "^8.7.4"
+    "pg-promise": "^8.7.4",
+    "tsscmp": "^1.0.6"
   },
   "devDependencies": {
     "eslint": "^6.0.1",
