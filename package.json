@@ -1,13 +1,12 @@
 {
-  "name": "@slack/template-announcement-approvals",
+  "name": "slack_bot_notifier",
   "version": "2.0.0",
   "private": true,
   "description": "An example Slack app",
-  "main": "index.js",
+  "main": "public/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "start": "webpack --config webpack.config.dev.js && nodemon dist/server.js",
+    "build": "webpack --config webpack.config.js"
   },
   "authors": [
     "Tomomi Imura <timura@slack-corp.com>"
@@ -18,9 +17,14 @@
     "body-parser": "^1.17.1",
     "dotenv": "^4.0.0",
     "express": "^4.15.2",
-    "tsscmp": "^1.0.6"
+    "tsscmp": "^1.0.6",
+    "pg-promise": "^8.7.4"
   },
   "devDependencies": {
-    "nodemon": "^1.19.1"
+    "eslint": "^6.0.1",
+    "nodemon": "^1.19.1",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5",
+    "webpack-node-externals": "^1.7.2"
   }
 }
